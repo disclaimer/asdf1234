@@ -185,23 +185,30 @@ var AlarmEntry = React.createClass({
         clearTimeout(this.state.intervalId);
     },
     render: function () {
-        return React.createElement('tr', { className: 'someclass' },
-        React.createElement('td', { className: 'someclass' },
-            React.createElement('input', { type: 'checkbox', onChange: this.handleCheck, ref: 'checkbox', checked: this.state.enable })
-        ),
-        React.createElement('td', { className: 'someclass' },
-            React.createElement('span', null, $.format.date(this.state.time, 'HH:mm:ss'))
-        ),
-        React.createElement('td', { className: 'someclass' },
-            React.createElement('span', { className: 'label label-default' }, this.state.comment)
-        ),
-        React.createElement('td', { className: 'someclass' },
-            React.createElement('button', { type: 'button', className: 'close', 'aria-label': 'Close', onClick: this.props.onClose },
+        return React.createElement(
+            'li',
+            { className: 'list-group-item' },
+            React.createElement('input', { type: 'checkbox', onChange: this.handleCheck, ref: 'checkbox', checked: this.state.enable }),
+            React.createElement(
+                'span',
+                null,
+                $.format.date(this.state.time, 'HH:mm:ss')
+            ),
+            '\xA0',
+            React.createElement(
+                'span',
+                { className: 'label label-default' },
+                this.state.comment
+            ),
+            React.createElement(
+                'button',
+                { type: 'button', className: 'close', 'aria-label': 'Close', onClick: this.props.onClose },
                 React.createElement(
-                    'span', { 'aria-hidden': 'true' }, '\xD7'
+                    'span',
+                    { 'aria-hidden': 'true' },
+                    '\xD7'
                 )
             )
-        )
         );
     }
 });
@@ -242,8 +249,8 @@ var AlarmList = React.createClass({
         }.bind(this);
 
         return React.createElement(
-            'table',
-            { className: 'table table-responsive alarmList list-group' },
+            'ul',
+            { className: 'alarmList list-group' },
             list()
         );
     }
