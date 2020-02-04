@@ -242,8 +242,8 @@ var AlarmList = React.createClass({
         }.bind(this);
 
         return React.createElement(
-            'ul',
-            { className: 'alarmList list-group' },
+            'table',
+            { className: 'table table-responsive alarmList list-group' },
             list()
         );
     }
