@@ -241,7 +241,7 @@ var AlarmList = React.createClass({
                 return React.createElement(
                     'li',
                     { className: 'list-group-item' },
-                    'None'
+                    'No alarm set.'
                 );
             } else {
                 return alarmNodes;
@@ -393,7 +393,8 @@ var Alarm = React.createClass({
     },
     render: function () {
         var date = new Date();
-        return React.createElement(
+        return React.createElement('h2',null,'Alarm'),
+            React.createElement(
             'div',
             { className: 'alarm' },
             React.createElement(Clock, null),
@@ -410,7 +411,7 @@ var Alarm = React.createClass({
                 React.createElement(
                     'div',
                     { className: 'form-inline text-center comment' },
-                    React.createElement('input', { className: 'form-control', type: 'text', ref: 'comment', placeholder: 'Leave your comment...', ref: 'comment' }),
+                    React.createElement('input', { className: 'form-control', type: 'text', ref: 'comment', placeholder: 'Alarm title/description (opcional)', ref: 'comment' }),
                     React.createElement(
                         'button',
                         { className: 'btn btn-default', type: 'button', onClick: this.handleAddAlarm },
