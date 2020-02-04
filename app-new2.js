@@ -347,7 +347,7 @@ var AlarmDigit = React.createClass({
         var value = paddy(this.state.value, 2);
         return React.createElement(
             'div',
-            { className: 'alarmDigit alarm-digit' },
+            { className: 'alarmDigit alarm-digit col-xs-4' },
             React.createElement(
                 'button',
                 { className: 'increase btn btn-default', onMouseDown: this.handleStartIncrease, onMouseUp: this.handleStopIncrease },
@@ -407,7 +407,7 @@ var Alarm = React.createClass({
                     React.createElement('div', { className: 'panel-body' },
                         React.createElement(
                             'div',
-                            { className: 'alarm-digits' },
+                            { className: 'alarm-digits row' },
                             React.createElement(AlarmDigit, { numberSystem: 24, val: date.getHours(), ref: 'hourDigit' }),
                             React.createElement(AlarmDigit, { numberSystem: 60, val: date.getMinutes(), onCarry: this.handleCarry.bind(this, 'hourDigit'), onBorrow: this.handleBorrow.bind(this, 'hourDigit'), ref: 'minuteDigit' }),
                             React.createElement(AlarmDigit, { numberSystem: 60, val: date.getSeconds(), onCarry: this.handleCarry.bind(this, 'minuteDigit'), onBorrow: this.handleBorrow.bind(this, 'minuteDigit'), ref: 'secondDigit' })
