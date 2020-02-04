@@ -403,7 +403,7 @@ var Alarm = React.createClass({
                 React.createElement(
                     'h2',
                     null,
-                    'Alarm time'
+                    'Set alarm time'
                 ),
                 React.createElement(
                     'div',
@@ -413,9 +413,14 @@ var Alarm = React.createClass({
                     React.createElement(AlarmDigit, { numberSystem: 60, val: date.getSeconds(), onCarry: this.handleCarry.bind(this, 'minuteDigit'), onBorrow: this.handleBorrow.bind(this, 'minuteDigit'), ref: 'secondDigit' })
                 ),
                 React.createElement(
+                    'h2',
+                    null,
+                    'Set alarm title'
+                ),
+                React.createElement(
                     'div',
                     { className: 'form-inline text-center comment' },
-                    React.createElement('input', { className: 'form-control', type: 'text', ref: 'comment', placeholder: 'Alarm title/description (opcional)', ref: 'comment' }),
+                    React.createElement('input', { className: 'form-control', type: 'text', ref: 'comment', placeholder: 'Your alarm title (optional)', ref: 'comment' }),
                     React.createElement(
                         'button',
                         { className: 'btn btn-default', type: 'button', onClick: this.handleAddAlarm },
@@ -425,13 +430,13 @@ var Alarm = React.createClass({
                 React.createElement(
                     'h2',
                     null,
-                    'Sounds'
+                    'Set alarm sound'
                 ),
                 React.createElement(Bell, { ref: 'bell', bells: this.state.bells, onAddAudio: this.handleAddAudio }),
                 React.createElement(
                     'h2',
                     null,
-                    'Alarms'
+                    'View your alarms'
                 ),
                 React.createElement(AlarmList, { data: data, ref: 'alarmList', onRing: this.handleRing })
             )
