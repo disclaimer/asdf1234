@@ -102,20 +102,16 @@ var Bell = React.createClass({
                 'Your browser does not support the audio element.'
             ),
             React.createElement(
-                'form',
+                'div',
                 { className: 'form' },
                 React.createElement(
                     'div',
-                    { className: 'form-group' },
+                    { className: 'form-group form-inline' },
                     React.createElement(
                         'select',
                         { className: 'form-control', onChange: this.handleChange },
                         options
-                    )
-                ),
-                React.createElement(
-                    'div',
-                    { className: 'form-group' },
+                    ),
                     React.createElement(
                         'button',
                         { className: 'btn btn-primary', onClick: this.handlePlay },
