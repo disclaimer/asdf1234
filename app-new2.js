@@ -9,7 +9,7 @@ var paddy = function (n, p, c) {
 var data = [];
 
 /* the default sounds for selection */
-var bells = [{ name: 'piano-melody', type: 'audio/wav', path: 'bell/70214__qlc__65bpm-piano-melody-0589.wav' }, { name: 'fractal-ramp-sonnet', type: 'audio/mpeg', path: 'bell/70002__qlc__240bpm-fractal-ramp-sonnet-track-1.mp3' }, { name: 'osng', type: 'audio/wav', path: 'bell/70213__qlc__152bpm-osng.wav' }, { name: 'zichus', type: 'audio/wav', path: 'bell/70217__qlc__85bpm-zichus.wav' }];
+var bells = [{ name: 'Bell', type: 'audio/mpeg', path: 'sounds/1.mp3' }, { name: 'Alien', type: 'audio/mpeg', path: 'sounds/2.mp3' }, { name: 'Digital', type: 'audio/mpeg', path: 'sounds/3.mp3' }, { name: 'Reveille', type: 'audio/mpeg', path: 'sounds/4.mp3' }];
 
 /* A clock component displaying the current time */
 var Clock = React.createClass({
