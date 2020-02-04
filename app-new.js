@@ -401,9 +401,9 @@ var Alarm = React.createClass({
                 'div',
                 { className: 'alarm-container' },
                 React.createElement(
-                    'h2',
+                    'h3',
                     null,
-                    'Set alarm time'
+                    'Alarm time'
                 ),
                 React.createElement(
                     'div',
@@ -413,9 +413,9 @@ var Alarm = React.createClass({
                     React.createElement(AlarmDigit, { numberSystem: 60, val: date.getSeconds(), onCarry: this.handleCarry.bind(this, 'minuteDigit'), onBorrow: this.handleBorrow.bind(this, 'minuteDigit'), ref: 'secondDigit' })
                 ),
                 React.createElement(
-                    'h2',
+                    'h3',
                     null,
-                    'Set alarm title'
+                    'Alarm title'
                 ),
                 React.createElement(
                     'div',
@@ -428,15 +428,15 @@ var Alarm = React.createClass({
                     )
                 ),
                 React.createElement(
-                    'h2',
+                    'h3',
                     null,
-                    'Set alarm sound'
+                    'Alarm sound'
                 ),
                 React.createElement(Bell, { ref: 'bell', bells: this.state.bells, onAddAudio: this.handleAddAudio }),
                 React.createElement(
-                    'h2',
+                    'h3',
                     null,
-                    'View your alarms'
+                    'Your alarms'
                 ),
                 React.createElement(AlarmList, { data: data, ref: 'alarmList', onRing: this.handleRing })
             )
