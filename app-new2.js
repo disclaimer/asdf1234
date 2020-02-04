@@ -241,18 +241,10 @@ var AlarmList = React.createClass({
             }
         }.bind(this);
 
-        return React.createElement('div', { className: 'table-responsive' },
-            React.createElement('table', { className: 'table table-condensed' },
-                React.createElement('thead', { className: 'someclass' },
-                    React.createElement('tr', { className: 'someclass' },
-                        React.createElement('td', { className: 'someclass' }, 'Active'),
-                        React.createElement('td', { className: 'someclass' }, 'Time'),
-                        React.createElement('td', { className: 'someclass' }, 'Description'),
-                        React.createElement('td', { className: 'someclass' }, 'Delete')
-                    )
-                ),
-                list()
-            )
+        return React.createElement(
+            'ul',
+            { className: 'alarmList list-group' },
+            list()
         );
     }
 });
