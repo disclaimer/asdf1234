@@ -393,14 +393,18 @@ var Alarm = React.createClass({
     },
     render: function () {
         var date = new Date();
-        return React.createElement('h2',null,'Alarm'),
-            React.createElement(
+        return React.createElement(
             'div',
             { className: 'alarm' },
             React.createElement(Clock, null),
             React.createElement(
                 'div',
                 { className: 'alarm-container' },
+                React.createElement(
+                    'h2',
+                    null,
+                    'Alarm time'
+                ),
                 React.createElement(
                     'div',
                     { className: 'alarm-digits' },
