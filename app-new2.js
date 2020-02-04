@@ -402,7 +402,9 @@ var Alarm = React.createClass({
                 { className: 'alarm-container' },
                 React.createElement('div', { className: 'panel panel-default' },
                     React.createElement('div', { className: 'panel-heading' },
-                        React.createElement('h3', null, 'Add new alarm')
+                        React.createElement('h3', { className: 'panel-title' },
+                          React.createElement('span', null, 'Add new alarm')
+                        )
                     ),
                     React.createElement('div', { className: 'panel-body' },
                         React.createElement(
