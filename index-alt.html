@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>React Alarm Clock</title>
+        <meta name="viewport" content="width=device-width,maximum-scale=2">
+        
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+        <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+        
+        <link rel="icon" href="favicon.png">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap-theme.min.css" crossorigin="anonymous" />
+        <style>
+            .wall-clock {
+                font-size: 100px;
+            }
+            .wall-clock:hover{
+                cursor: pointer;
+            }
+            .alarm-digits {
+                overflow: hidden;
+            }
+            .alarm-digit {
+                float: left;
+                width: 150px;
+            }
+            .alarm-digit button {
+                border: 0;
+                padding: 0;
+                margin: 0;
+                background: none;
+                width: 100%;
+                height: 30px;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+            }
+            .alarm-digit button:active {
+                border: 0;
+                outline: 0 !important;
+                background: #adadad;
+            }
+            .alarm-digit button:focus, .alarm-digit button.focus {
+                border: 0;
+                outline: 0;
+            }
+            .alarm-digit:hover button, .alarm-digit.focus button {
+                background: #e0e0e0;
+            }
+            .alarm-digit input {
+                font-size: 50px;
+                line-height: 50px;
+                height: 64px;
+                border: 0;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                outline: 0;
+            }
+            .alarm-digit input:focus {
+                outline: 0;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+            }
+            .alarm-container {
+                overflow: hidden;
+                width: 450px;
+                margin: 0 auto;
+            }
+            .comment {
+                margin-top: 15px;
+                display: relative;
+            }
+            .comment input.form-control {
+                width: 80%;
+                position: relative;
+                display: inline-block;
+            }
+            .comment button {
+                width: 20%;
+                position: relative;
+                display: inline-block;
+            }
+            .bell select {
+                width: 60% !important;
+            }
+            .bell button {
+                width: 20%;
+            }
+        </style>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.9/react.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-dateFormat/1.0/jquery.dateFormat.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="content" class="container"></div>
+        <script src="app-new.js"></script>
+        <div id="about" class="container">
+            <h2>Free Online Alarm Clock</h2>
+            <p>Free, <strong class="cap">online alarm clock</strong> since 2009 has been offering the best choice of application those who can not lose time, so as to wake up for reminders throughout the day.</p>
+            <p>The <strong>online clock</strong>, after being synchronized with the time of the user's PC, will display on your dashboard options for setting the <strong>alarm</strong>.</p>
+            <p>Among its highlights is the fact that it is not necessary to <strong>download</strong>: users only have to access the website and set the alarm!</p>
+            <p>For work completly online, the <strong>alarm clock</strong> is compatible with any desktop <strong>PC</strong> or notebook computer (laptop), regardless of operating system is Windows, Linux or Mac OS.</p>
+            <p>It's important that the machine has the <a href="https://get.adobe.com/flashplayer/?loc=us" target="_blank" rel="nofollow noopener noreferrer">Adobe Flash Player</a> plugin to the operation of software.</p>
+            <p>Actualy we don't have an app for portable devices (such as mobile phones, smartphones or tablets). In the future we intend to develop major systems (Symbian, iOS, Android, Windows Mobile) to meet the main models of devices (iPhone, iPod, iPad, Galaxy, etc).</p>
+        </div><!-- #about -->
+    </body>
+</html>
