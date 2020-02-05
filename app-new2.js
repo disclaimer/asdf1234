@@ -31,11 +31,16 @@ var Clock = React.createClass({
         clearInterval(this.state.id);
     },
     render: function () {
-        return React.createElement('div', { className: 'jumbotron' },
-            React.createElement(
-                'h1',
-                { className: 'text-center wall-clock' },
-                $.format.date(this.state.time, 'HH:mm:ss')
+        return React.createElement('div', { className: 'panel panel-default' },
+            React.createElement('div', { className: 'panel-heading' },
+                React.createElement('h3', { className: 'panel-title' }, 'Current time')
+            ),
+            React.createElement('div', { className: 'panel-body' },
+                React.createElement(
+                    'h1',
+                    { className: 'text-center wall-clock' },
+                    $.format.date(this.state.time, 'HH:mm:ss')
+                )
             )
         );
     }
