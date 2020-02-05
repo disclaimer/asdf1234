@@ -428,6 +428,16 @@ var Alarm = React.createClass({
                         ),
                         React.createElement(AlarmList, { data: data, ref: 'alarmList', onRing: this.handleRing })
                     )
+                ),
+                React.createElement('div', { className: 'panel panel-default' },
+                    React.createElement('div', { className: 'panel-heading' },
+                        React.createElement('h3', { className: 'panel-title' },
+                          React.createElement('span', null, 'Alarm clock settings')
+                        )
+                    ),
+                    React.createElement('div', { className: 'panel-body' },
+                        React.createElement(Bell, { ref: 'bell', bells: this.state.bells, onAddAudio: this.handleAddAudio })
+                    )
                 )
             )
         );
