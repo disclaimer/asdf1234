@@ -1,4 +1,6 @@
 CACHE MANIFEST
+# 2020-02-05:v2
+
 index-new.html
 app-new2.js
 sounds/1.mp3
@@ -12,4 +14,8 @@ https://cdnjs.cloudflare.com/ajax/libs/react/0.14.9/react.min.js
 https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js
 https://cdnjs.cloudflare.com/ajax/libs/jquery-dateFormat/1.0/jquery.dateFormat.min.js
 https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js
+https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/fonts/glyphicons-halflings-regular.eot
+https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/fonts/glyphicons-halflings-regular.ttf
+https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/fonts/glyphicons-halflings-regular.woff
 https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/fonts/glyphicons-halflings-regular.woff2
+https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/fonts/glyphicons-halflings-regular.svg
