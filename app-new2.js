@@ -425,27 +425,8 @@ var Alarm = React.createClass({
                                 { className: 'btn btn-default', type: 'button', onClick: this.handleAddAlarm },
                                 React.createElement('span', { className: 'glyphicon glyphicon-plus', 'aria-hidden': 'true' })
                             )
-                        )
-                    )
-                ),
-                React.createElement('div', { className: 'panel panel-default' },
-                    React.createElement('div', { className: 'panel-heading' },
-                        React.createElement('h3', { className: 'panel-title' },
-                          React.createElement('span', null, 'Your alarms list')
-                        )
-                    ),
-                    React.createElement('div', { className: 'panel-body' },
+                        ),
                         React.createElement(AlarmList, { data: data, ref: 'alarmList', onRing: this.handleRing })
-                    )
-                ),
-                React.createElement('div', { className: 'panel panel-default' },
-                    React.createElement('div', { className: 'panel-heading' },
-                        React.createElement('h3', { className: 'panel-title' },
-                          React.createElement('span', null, 'Alarm clock settings')
-                        )
-                    ),
-                    React.createElement('div', { className: 'panel-body' },
-                        React.createElement(Bell, { ref: 'bell', bells: this.state.bells, onAddAudio: this.handleAddAudio })
                     )
                 )
             )
