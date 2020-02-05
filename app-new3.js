@@ -255,6 +255,7 @@ var AlarmList = React.createClass({
                 ),
                 React.createElement('tbody', { className: 'alarmList list-group' },
                 list()
+                )
             )
         );
     }
