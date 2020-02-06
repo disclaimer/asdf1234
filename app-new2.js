@@ -419,6 +419,7 @@ var Alarm = React.createClass({
                                 React.createElement('span', { className: 'glyphicon glyphicon-plus', 'aria-hidden': 'true' })
                             )
                         ),
+                        React.createElement('hr', null),
                         React.createElement(AlarmList, { data: data, ref: 'alarmList', onRing: this.handleRing })
                     )
                 ),
