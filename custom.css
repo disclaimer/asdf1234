@@ -83,13 +83,13 @@
 
 
 li.list-group-item span.label {
-    margin: 0 10px;
+    margin: 0 15px 0 0;
     background: #000;
 }
 
 
-.close {
+.list-group-item input {
     position: absolute;
     right: 10px;
-    top: 7px;
+    top: 10px;
 }
