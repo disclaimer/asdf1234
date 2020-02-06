@@ -1,3 +1,20 @@
+body {
+    background: #690;
+}
+
+.dropdown-menu .label {
+    float: right;
+    margin: 3px 0 0;
+}
+
+.col-md-5 {
+    background: #060;
+    border: 2px solid #70a600;
+    padding: 15px;
+}
+.col-md-7 {
+    /* color: #fff; */
+}
 .wall-clock {
     font-size: 92px;
     margin: 0;
