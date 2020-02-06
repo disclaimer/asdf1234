@@ -37,7 +37,7 @@ var Clock = React.createClass({
             ),
             React.createElement('div', { className: 'panel-body' },
                 React.createElement(
-                    'h1',
+                    'h4',
                     { className: 'text-center wall-clock' },
                     $.format.date(this.state.time, 'HH:mm:ss')
                 )
