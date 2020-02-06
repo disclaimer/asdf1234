@@ -201,10 +201,9 @@ var AlarmEntry = React.createClass({
                 { className: 'label label-default'},
                 $.format.date(this.state.time, 'HH:mm:ss')
             ),
-            '\xA0',
             React.createElement(
                 'span',
-                { className: 'text-muted' },
+                null,
                 this.state.comment
             ),
             React.createElement(
