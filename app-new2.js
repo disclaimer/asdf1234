@@ -408,7 +408,7 @@ var Alarm = React.createClass({
                 { className: 'alarm-container' },
                 React.createElement('div', { className: 'panel panel-default' },
                     React.createElement('div', { className: 'panel-heading' },
-                        React.createElement('h3', { className: 'panel-title' }, 'Set alarm time')
+                        React.createElement('h3', { className: 'panel-title' }, 'Alarm time')
                     ),
                     React.createElement('div', { className: 'panel-body' },
                         React.createElement(
@@ -432,9 +432,6 @@ var Alarm = React.createClass({
                     )
                 ),
                 React.createElement('div', { className: 'panel panel-default' },
-                    React.createElement('div', { className: 'panel-heading' },
-                        React.createElement('h3', { className: 'panel-title' }, 'Set alarm sound')
-                    ),
                     React.createElement('div', { className: 'panel-body' },
                         React.createElement(Bell, { ref: 'bell', bells: this.state.bells, onAddAudio: this.handleAddAudio })
                     )
