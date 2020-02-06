@@ -3,7 +3,7 @@
     margin: 0;
 }
 .wall-clock:hover{
-    cursor: pointer;
+    cursor: default;
 }
 .alarm .list-group,
 .alarm .form-group {
@@ -84,4 +84,5 @@
 
 li.list-group-item span.label {
     margin: 0 10px;
+    background: #000;
 }
