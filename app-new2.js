@@ -195,7 +195,6 @@ var AlarmEntry = React.createClass({
         return React.createElement(
             'li',
             { className: 'list-group-item' },
-            React.createElement('input', { type: 'checkbox', onChange: this.handleCheck, ref: 'checkbox', checked: this.state.enable }),
             React.createElement(
                 'span',
                 { className: 'label label-default'},
@@ -206,15 +205,7 @@ var AlarmEntry = React.createClass({
                 null,
                 this.state.comment
             ),
-            React.createElement(
-                'button',
-                { type: 'button', className: 'close', 'aria-label': 'Close', onClick: this.props.onClose },
-                React.createElement(
-                    'span',
-                    { 'aria-hidden': 'true' },
-                    '\xD7'
-                )
-            )
+            React.createElement('input', { type: 'checkbox', onChange: this.handleCheck, ref: 'checkbox', checked: this.state.enable })
         );
     }
 });
