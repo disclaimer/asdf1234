@@ -1,5 +1,6 @@
 .wall-clock {
     font-size: 92px;
+    margin: 0;
 }
 .wall-clock:hover{
     cursor: pointer;
