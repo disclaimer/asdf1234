@@ -198,13 +198,13 @@ var AlarmEntry = React.createClass({
             React.createElement('input', { type: 'checkbox', onChange: this.handleCheck, ref: 'checkbox', checked: this.state.enable }),
             React.createElement(
                 'span',
-                null,
+                { className: 'label label-default'},
                 $.format.date(this.state.time, 'HH:mm:ss')
             ),
             '\xA0',
             React.createElement(
                 'span',
-                { className: 'label label-default' },
+                { className: 'text-muted' },
                 this.state.comment
             ),
             React.createElement(
