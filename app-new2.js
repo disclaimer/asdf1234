@@ -246,7 +246,7 @@ var AlarmList = React.createClass({
             if (this.state.data.length == 0) {
                 return React.createElement(
                     'li',
-                    { className: 'list-group-item' },
+                    { className: 'list-group-item text-muted' },
                     'No alarm set.'
                 );
             } else {
