@@ -80,3 +80,9 @@
 .bell button {
     width: 20%;
 }
+
+
+.list-group-item input[type=checkbox],
+.list-group-item input[type=radio] {
+    margin: 4px 10px 0 0;
+}
