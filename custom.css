@@ -86,3 +86,10 @@ li.list-group-item span.label {
     margin: 0 10px;
     background: #000;
 }
+
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+}
