@@ -4,6 +4,13 @@
 .wall-clock:hover{
     cursor: pointer;
 }
+.alarm .list-group,
+.alarm .form-group {
+    margin-bottom: 0;
+}
+.alarm .alarmList {
+    margin-top: 15px;
+}
 .alarm-digits {
     overflow: hidden;
 }
